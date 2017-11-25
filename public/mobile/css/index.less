@@ -1,0 +1,177 @@
+@import 'common.less';
+
+	.lt_box {
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		/*区域滚动*/
+		.mui-scroll-wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	/* 轮播图 */	
+	
+	.flexslider {
+		position: relative;
+		width: 100%;
+		height: auto;
+
+		.wrap {
+			height: auto;
+		}
+
+		a {
+			width: 100%;
+			display: block;
+
+			img {
+				width: 100%;
+				height: 234px;
+			}
+		}
+
+		.controls {
+			position: absolute;
+			bottom: 30px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 50%;
+			height: 10px;
+			padding-left: 5px;
+
+			li {
+				float: left;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #666;
+				margin: 3px 5px;
+				cursor: pointer;
+			}
+
+			li.active {
+				background-color: orangered;
+			}
+		}
+	}
+
+	/* 导航 */
+
+	.main_nav {
+		width: 100%;
+		padding: 10px;
+		background-color: #fff;
+		margin: 0;
+
+		a {
+			float: left;
+			width: 33.33%;
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+	/* 热门活动 */
+
+	.hot_activities {
+		position: relative;
+		width: 100%;
+		margin-bottom: 8px;
+
+		a:first-child, a:last-child {
+			width: 66.67%;
+			float: left;
+			
+			img {
+				display: block;
+				float: left;
+				width: 50%;
+			}
+		}
+		a.right {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 33.33%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	/* 品牌专区 */
+
+	.brand {
+		width: 100%;
+
+		.title img{
+			width: 100%;
+			padding: 0 10px;
+		}
+
+		.brands a{
+			display: block;
+			float: left;
+			width: 25%;
+		
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+	/* 运动生活专区 -- 女士专区 -- 男士专区*/
+
+	.sports_life, .ladies, .gentlemen {
+		width: 100%;
+
+		.title img{
+			width: 100%;
+			padding: 0 10px;
+		}
+
+		.products {
+			width: 100%;
+			padding: 10px 12px;
+
+			.box {
+				width: 49%;
+				float: left;
+				border: 1px solid #E3E3E5;
+				color: #fff;
+				text-align: center;
+				margin-bottom: 8px;
+
+				img {
+					width: 100%;
+				}
+				p {
+					margin-bottom: 10px;
+				}
+				.price {
+					.current_price {
+						color: red;
+						margin-right: 3px;
+					}
+				}
+				button {
+					width: 80px;
+					height: 30px;
+					color: #fff;
+					margin-bottom: 10px;
+					background-color: #006699;
+				}
+			}
+			.box:nth-child(2n) {
+				float: right;
+			}
+		}
+	}

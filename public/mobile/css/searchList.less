@@ -1,0 +1,101 @@
+@import 'common.less';
+
+	/* 搜索框 */
+
+	.search {
+		position: relative;
+		width: 95%;
+		height: 30px;
+		margin: 60px auto 10px; 
+
+		input {
+			width: 100%;
+			height: 30px;
+			font-size: 12px;
+			border: none;
+			outline: none;
+			border-radius: 5px;
+			border: 1px solid #006699;
+		}
+		button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			float: right;
+			width: 60px;
+			height: 30px;
+			color: #fff;
+			font-size: 14px;
+			background-color: #006699;
+			border-right-top-radius: 5px;
+			border-right-bottom-radius: 5px;
+		}
+	}
+
+	/* 筛选框 */
+
+	.filter {
+		width: 100%;
+		height: 30px;
+		font-size: 12px;
+		line-height: 30px;
+		text-align: center;
+		background-color: #EFEFF4;
+
+		a {
+			float: left;
+			width: 25%;
+			color: #666;
+		}
+		.active {
+			color: red;
+		}
+	}
+
+	/* 商品列表 */
+		
+	.productsList {
+		width: 100%;
+		padding: 10px 12px;
+		background-color: #fff;
+
+		.box {
+			width: 49%;
+			float: left;
+			border: 1px solid #E3E3E5;
+			color: #fff;
+			text-align: center;
+			margin-bottom: 8px;
+			box-shadow: 0 1px .5px .5px #ccc;
+
+			img {
+				width: 100%;
+			}
+			p {
+				height: 40px;
+				overflow:hidden;
+				margin-bottom: 10px;
+			}
+			.price {
+				.current_price {
+					color: red;
+					margin-right: 3px;
+				}
+			}
+			button {
+				width: 80px;
+				height: 30px;
+				color: #fff;
+				margin-bottom: 10px;
+				background-color: #006699;
+			}
+		}
+		.box:nth-child(2n) {
+			float: right;
+		}
+	}
+	
+	.mui-scroll {
+		background-color: #fff;
+		margin-top: -5px;
+	}

@@ -1,0 +1,242 @@
+/* 头部 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: 45px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  background-color: #006699;
+  z-index: 999;
+}
+header .arrow {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  line-height: 45px;
+  font-size: 18px;
+  color: #fff;
+}
+header h2 {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 17px;
+  font-weight: normal;
+  text-align: center;
+}
+header .search {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 45px;
+}
+/* 脚部 */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #006699;
+  padding-top: 5px;
+  z-index: 999;
+}
+footer a {
+  display: block;
+  float: left;
+  width: 25%;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+}
+footer a p {
+  color: inherit;
+  margin-top: -4px;
+  display: block;
+}
+footer .active {
+  color: orange;
+}
+.lt_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*区域滚动*/
+}
+.lt_box .mui-scroll-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* 轮播图 */
+.flexslider {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.flexslider .wrap {
+  height: auto;
+}
+.flexslider a {
+  width: 100%;
+  display: block;
+}
+.flexslider a img {
+  width: 100%;
+  height: 234px;
+}
+.flexslider .controls {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 10px;
+  padding-left: 5px;
+}
+.flexslider .controls li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #666;
+  margin: 3px 5px;
+  cursor: pointer;
+}
+.flexslider .controls li.active {
+  background-color: orangered;
+}
+/* 导航 */
+.main_nav {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  margin: 0;
+}
+.main_nav a {
+  float: left;
+  width: 33.33%;
+}
+.main_nav a img {
+  display: block;
+  width: 100%;
+}
+/* 热门活动 */
+.hot_activities {
+  position: relative;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.hot_activities a:first-child,
+.hot_activities a:last-child {
+  width: 66.67%;
+  float: left;
+}
+.hot_activities a:first-child img,
+.hot_activities a:last-child img {
+  display: block;
+  float: left;
+  width: 50%;
+}
+.hot_activities a.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 33.33%;
+}
+.hot_activities a.right img {
+  width: 100%;
+}
+/* 品牌专区 */
+.brand {
+  width: 100%;
+}
+.brand .title img {
+  width: 100%;
+  padding: 0 10px;
+}
+.brand .brands a {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.brand .brands a img {
+  display: block;
+  width: 100%;
+}
+/* 运动生活专区 -- 女士专区 -- 男士专区*/
+.sports_life,
+.ladies,
+.gentlemen {
+  width: 100%;
+}
+.sports_life .title img,
+.ladies .title img,
+.gentlemen .title img {
+  width: 100%;
+  padding: 0 10px;
+}
+.sports_life .products,
+.ladies .products,
+.gentlemen .products {
+  width: 100%;
+  padding: 10px 12px;
+}
+.sports_life .products .box,
+.ladies .products .box,
+.gentlemen .products .box {
+  width: 49%;
+  float: left;
+  border: 1px solid #E3E3E5;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.sports_life .products .box img,
+.ladies .products .box img,
+.gentlemen .products .box img {
+  width: 100%;
+}
+.sports_life .products .box p,
+.ladies .products .box p,
+.gentlemen .products .box p {
+  margin-bottom: 10px;
+}
+.sports_life .products .box .price .current_price,
+.ladies .products .box .price .current_price,
+.gentlemen .products .box .price .current_price {
+  color: red;
+  margin-right: 3px;
+}
+.sports_life .products .box button,
+.ladies .products .box button,
+.gentlemen .products .box button {
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+  background-color: #006699;
+}
+.sports_life .products .box:nth-child(2n),
+.ladies .products .box:nth-child(2n),
+.gentlemen .products .box:nth-child(2n) {
+  float: right;
+}
